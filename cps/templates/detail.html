@@ -54,7 +54,7 @@
               {% endif %}
             {% endif %}
           {% if reader_list and g.user.role_viewer() %}
-              <div class="btn-group" role="group">
+              <!-- <div class="btn-group" role="group">
                 <button id="read-in-browser" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-eye-open"></span> {{_('Read in browser')}}
                   <span class="caret"></span>
@@ -64,7 +64,7 @@
                       <li><a target="_blank" href="{{ url_for('web.read_book', book_id=entry.id, book_format=format) }}">{{format}}</a></li>
                     {%endfor%}
                     </ul>
-              </div>
+              </div> -->
             {% endif %}
             {% if audioentries|length > 0 %}
               <div class="btn-group" role="group">
