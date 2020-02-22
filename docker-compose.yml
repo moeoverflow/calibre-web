@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  comicbook-calibre-web:
+    container_name: comicbook-calibre-web
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - /opt/calibre/ebook-convert:/opt/calibre/ebook-convert
+      - xxx:/usr/src/app.db
+      - xxx:/usr/src/gdrive.db
+      - xxx:/usr/src/calibre-web.log
+    ports:
+      - 9000:8083
